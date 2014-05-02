@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/oji" />
 
 </RelativeLayout>
