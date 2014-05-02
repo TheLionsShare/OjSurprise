@@ -35,13 +35,13 @@ public class SplashActivity extends ActionBarActivity
 			public void run()
 			{
 
-				MediaPlayer monos = MediaPlayer.create(SplashActivity.this,
-						R.raw.angrymonkesy);
+				MediaPlayer drank = MediaPlayer.create(SplashActivity.this,
+						R.raw.splashsound);
 
 				try
 				{
 
-					monos.start();
+					drank.start();
 					sleep(5000);
 					startActivity(new Intent(SplashActivity.this,
 							MenuActivity.class));

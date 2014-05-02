@@ -992,20 +992,21 @@ containing a value of this type.
         public static final int grape=0x7f02005b;
         public static final int ic_launcher=0x7f02005c;
         public static final int jungle1=0x7f02005d;
-        public static final int monkey=0x7f02005e;
-        public static final int oji=0x7f02005f;
-        public static final int ojsurprise=0x7f020060;
-        public static final int orange=0x7f020061;
-        public static final int orangefresh=0x7f020062;
-        public static final int pineapple=0x7f020063;
-        public static final int playtext=0x7f020064;
-        public static final int question=0x7f020065;
-        public static final int tnt=0x7f020066;
-        public static final int watermelon=0x7f020067;
+        public static final int logo=0x7f02005e;
+        public static final int monkey=0x7f02005f;
+        public static final int oji=0x7f020060;
+        public static final int ojsurprise=0x7f020061;
+        public static final int orange=0x7f020062;
+        public static final int orangefresh=0x7f020063;
+        public static final int orangeicon=0x7f020064;
+        public static final int pineapple=0x7f020065;
+        public static final int playtext=0x7f020066;
+        public static final int proteinstain=0x7f020067;
+        public static final int question=0x7f020068;
+        public static final int tnt=0x7f020069;
+        public static final int watermelon=0x7f02006a;
     }
     public static final class id {
-        public static final int TextView01=0x7f070041;
-        public static final int TextView02=0x7f070040;
         public static final int action_bar=0x7f07001c;
         public static final int action_bar_activity_content=0x7f070015;
         public static final int action_bar_container=0x7f07001b;
@@ -1017,7 +1018,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070016;
         public static final int action_menu_presenter=0x7f070017;
         public static final int action_mode_close_button=0x7f070024;
-        public static final int action_settings=0x7f070046;
+        public static final int action_settings=0x7f070045;
         public static final int activity_chooser_view_content=0x7f070025;
         public static final int always=0x7f07000b;
         public static final int beginning=0x7f070011;
@@ -1037,9 +1038,10 @@ containing a value of this type.
         public static final int icon=0x7f07002a;
         public static final int ifRoom=0x7f07000a;
         public static final int image=0x7f070027;
-        public static final int imageButton1=0x7f070044;
-        public static final int imageView1=0x7f07003f;
-        public static final int imageView2=0x7f070045;
+        public static final int imageButton1=0x7f070043;
+        public static final int imageView1=0x7f070044;
+        public static final int imageView2=0x7f07003f;
+        public static final int imageView3=0x7f070040;
         public static final int listMode=0x7f070001;
         public static final int list_item=0x7f070029;
         public static final int middle=0x7f070012;
@@ -1067,9 +1069,9 @@ containing a value of this type.
         public static final int submit_area=0x7f070039;
         public static final int surfaceView1=0x7f07003d;
         public static final int tabMode=0x7f070002;
-        public static final int textView1=0x7f07003e;
-        public static final int textView2=0x7f070042;
-        public static final int textView3=0x7f070043;
+        public static final int textView1=0x7f070042;
+        public static final int textView3=0x7f070041;
+        public static final int textView4=0x7f07003e;
         public static final int title=0x7f07002b;
         public static final int top_action_bar=0x7f070020;
         public static final int up=0x7f070021;
@@ -1146,6 +1148,7 @@ containing a value of this type.
         public static final int angrymonkesy=0x7f060001;
         public static final int chimpscream=0x7f060002;
         public static final int monkeys=0x7f060003;
+        public static final int splashsound=0x7f060004;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

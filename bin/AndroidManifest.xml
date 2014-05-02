@@ -27,6 +27,7 @@
             android:label="@string/title_activity_splash" >
         </activity>
         <activity
+            android:screenOrientation="landscape"
             android:name="game.oj.surprise.MenuActivity"
             android:label="@string/title_activity_menu" >
         </activity>
