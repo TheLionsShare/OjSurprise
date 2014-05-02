@@ -38,7 +38,7 @@ public class MainActivity extends ActionBarActivity
 
 				try
 				{
-					sleep(2000);
+					sleep(4000);
 					 startActivity(new Intent(MainActivity.this,
 					 SplashActivity.class));
 

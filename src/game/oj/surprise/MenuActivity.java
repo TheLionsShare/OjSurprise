@@ -14,60 +14,64 @@ import android.os.Build;
 public class MenuActivity extends ActionBarActivity
 {
 
-@Override
-protected void onCreate(Bundle savedInstanceState)
-{
-super.onCreate(savedInstanceState);
-setContentView(R.layout.activity_menu);
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_menu);
 
-if (savedInstanceState == null)
-{
-getSupportFragmentManager().beginTransaction()
-.add(R.id.container, new PlaceholderFragment()).commit();
-}
-}
+		if (savedInstanceState == null)
+		{
+			getSupportFragmentManager().beginTransaction()
+					.add(R.id.container, new PlaceholderFragment()).commit();
+		}
 
-@Override
-public boolean onCreateOptionsMenu(Menu menu)
-{
+		overridePendingTransition(R.animator.activityfadein,
+				R.animator.activityfadeout);
 
-// Inflate the menu; this adds items to the action bar if it is present.
-getMenuInflater().inflate(R.menu.menu, menu);
-return true;
-}
+	}
 
-@Override
-public boolean onOptionsItemSelected(MenuItem item)
-{
-// Handle action bar item clicks here. The action bar will
-// automatically handle clicks on the Home/Up button, so long
-// as you specify a parent activity in AndroidManifest.xml.
-int id = item.getItemId();
-if (id == R.id.action_settings)
-{
-return true;
-}
-return super.onOptionsItemSelected(item);
-}
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
 
-/**
-* A placeholder fragment containing a simple view.
-*/
-public static class PlaceholderFragment extends Fragment
-{
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.menu, menu);
+		return true;
+	}
 
-public PlaceholderFragment()
-{
-}
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings)
+		{
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
 
-@Override
-public View onCreateView(LayoutInflater inflater, ViewGroup container,
-Bundle savedInstanceState)
-{
-View rootView = inflater.inflate(R.layout.fragment_menu, container,
-false);
-return rootView;
-}
-}
+	/**
+	 * A placeholder fragment containing a simple view.
+	 */
+	public static class PlaceholderFragment extends Fragment
+	{
+
+		public PlaceholderFragment()
+		{
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState)
+		{
+			View rootView = inflater.inflate(R.layout.fragment_menu, container,
+					false);
+			return rootView;
+		}
+	}
 
 }
