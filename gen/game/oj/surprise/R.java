@@ -1255,11 +1255,11 @@ containing a value of this type.
         public static final int icon=0x7f07003b;
         public static final int ifRoom=0x7f07001c;
         public static final int image=0x7f070038;
-        public static final int imageButton1=0x7f070055;
-        public static final int imageButton2=0x7f070054;
+        public static final int imageButton1=0x7f070054;
+        public static final int imageButton2=0x7f070055;
         public static final int imageView1=0x7f070056;
         public static final int imageView2=0x7f070050;
-        public static final int imageView3=0x7f070051;
+        public static final int imageView3=0x7f07004f;
         public static final int left=0x7f070006;
         public static final int listMode=0x7f070013;
         public static final int list_item=0x7f07003a;
@@ -1290,9 +1290,9 @@ containing a value of this type.
         public static final int submit_area=0x7f07004a;
         public static final int surfaceView1=0x7f07004e;
         public static final int tabMode=0x7f070014;
-        public static final int textView1=0x7f070053;
-        public static final int textView3=0x7f070052;
-        public static final int textView4=0x7f07004f;
+        public static final int textView1=0x7f070051;
+        public static final int textView3=0x7f070053;
+        public static final int textView4=0x7f070052;
         public static final int title=0x7f07003c;
         public static final int top=0x7f070004;
         public static final int top_action_bar=0x7f070031;

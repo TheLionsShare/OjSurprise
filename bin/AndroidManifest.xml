@@ -15,7 +15,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="game.oj.surprise.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,17 +25,18 @@
         </activity>
         <activity
             android:name="game.oj.surprise.SplashActivity"
-            android:label="@string/title_activity_splash" >
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:screenOrientation="landscape"
             android:name="game.oj.surprise.MenuActivity"
-            android:label="@string/title_activity_menu" >
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name="game.oj.surprise.GameActivity"
-            android:label="@string/title_activity_game" 
-            android:screenOrientation="landscape">
+            android:label="@string/title_activity_game"
+            android:screenOrientation="landscape" >
         </activity>
     </application>
 

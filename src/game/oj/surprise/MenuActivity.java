@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.os.Build;
 
 public class MenuActivity extends ActionBarActivity
@@ -27,9 +28,29 @@ public class MenuActivity extends ActionBarActivity
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
 
-		overridePendingTransition(R.animator.activityfadein,
-				R.animator.activityfadeout);
+		final Button play = (Button) findViewById(R.id.imageButton1);
 
+		Thread thread = new Thread()
+		{
+
+			public void run()
+			{
+
+				overridePendingTransition(R.animator.activityfadein,
+						R.animator.activityfadeout);
+
+				play.setOnClickListener(new View.OnClickListener()
+				{
+					public void onClick(View v)
+					{
+						finish();
+					}
+				});
+
+			}
+		};
+
+		thread.start();
 	}
 
 	@Override
