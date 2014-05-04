@@ -39,13 +39,7 @@ public class MenuActivity extends ActionBarActivity
 				overridePendingTransition(R.animator.activityfadein,
 						R.animator.activityfadeout);
 
-			}
-
-			public void selfDestruct(View v)
-			{
-
-				startActivity(new Intent(MenuActivity.this,
-						 GameActivity.class));
+				startActivity(new Intent(MenuActivity.this, GameActivity.class));
 
 			}
 

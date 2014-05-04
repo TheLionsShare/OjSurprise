@@ -4,7 +4,9 @@ import game.oj.surprise.GameView.OjThread;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,7 +15,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.os.Build;
 
-public class GameActivity extends ActionBarActivity implements OnClickListener
+public class GameActivity extends Activity
 {
 	private static final int MENU_PAUSE = 1;
 	private static final int MENU_RESUME = 2;
@@ -70,19 +72,20 @@ public class GameActivity extends ActionBarActivity implements OnClickListener
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.oj_layout);
 
-		gView = (GameView) findViewById(R.id.oj);
-		thread = gView.getThread();
+		// gView = (GameView) findViewById(R.id.oj);
+		// thread = gView.getThread();
 
 		if (savedInstanceState == null)
 		{
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
+		//	thread.setState(OjThread.READY);
+			//Log.w(this.getClass().getName(), "SIS is null");
 		}
 
 		else
 		{
 
-			thread.restoreState(savedInstanceState);
+			//thread.restoreState(savedInstanceState);
+			//Log.w(this.getClass().getName(), "SIS is not null");
 
 		}
 	}
@@ -99,33 +102,7 @@ public class GameActivity extends ActionBarActivity implements OnClickListener
 	{
 		super.onSaveInstanceState(outState);
 		thread.saveState(outState);
-
-	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment
-	{
-
-		public PlaceholderFragment()
-		{
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState)
-		{
-			View rootView = inflater.inflate(R.layout.fragment_game, container,
-					false);
-			return rootView;
-		}
-	}
-
-	@Override
-	public void onClick(View v)
-	{
-
+		Log.w(this.getClass().getName(), "SIS is called");
 	}
 
 }
