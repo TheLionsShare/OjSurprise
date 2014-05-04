@@ -72,20 +72,20 @@ public class GameActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.oj_layout);
 
-		// gView = (GameView) findViewById(R.id.oj);
-		// thread = gView.getThread();
+		gView = (GameView) findViewById(R.id.oj);
+		thread = gView.getThread();
 
 		if (savedInstanceState == null)
 		{
-		//	thread.setState(OjThread.READY);
-			//Log.w(this.getClass().getName(), "SIS is null");
+			thread.setState(OjThread.READY);
+			Log.w(this.getClass().getName(), "SIS is null");
 		}
 
 		else
 		{
 
-			//thread.restoreState(savedInstanceState);
-			//Log.w(this.getClass().getName(), "SIS is not null");
+			thread.restoreState(savedInstanceState);
+			Log.w(this.getClass().getName(), "SIS is not null");
 
 		}
 	}

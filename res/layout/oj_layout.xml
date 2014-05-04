@@ -6,25 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.example.android.lunarlander.LunarView
+    <com.example.android.GameView
         android:id="@+id/oj"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="@drawable/jungle1" >
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:gravity="center_horizontal"
-            android:text="TESTING"
-            android:textColor="#88ffffff"
-            android:textSize="24sp"
-            android:visibility="visible" />
     </RelativeLayout>
 
 </FrameLayout>

@@ -406,8 +406,6 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback
 		{
 			public void handleMessage(Message m)
 			{
-				statusText.setVisibility(m.getData().getInt("visible"));
-				statusText.setText(m.getData().getString("text"));
 
 			}
 
