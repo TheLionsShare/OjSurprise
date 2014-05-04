@@ -1223,7 +1223,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070027;
         public static final int action_menu_presenter=0x7f070028;
         public static final int action_mode_close_button=0x7f070035;
-        public static final int action_settings=0x7f070057;
+        public static final int action_settings=0x7f070059;
         public static final int activity_chooser_view_content=0x7f070036;
         public static final int alignBounds=0x7f070002;
         public static final int alignMargins=0x7f070003;
@@ -1267,6 +1267,7 @@ containing a value of this type.
         public static final int never=0x7f07001b;
         public static final int none=0x7f070022;
         public static final int normal=0x7f070012;
+        public static final int oj=0x7f070057;
         public static final int progress_circular=0x7f070029;
         public static final int progress_horizontal=0x7f07002a;
         public static final int radio=0x7f070040;
@@ -1290,6 +1291,7 @@ containing a value of this type.
         public static final int submit_area=0x7f07004a;
         public static final int surfaceView1=0x7f07004e;
         public static final int tabMode=0x7f070014;
+        public static final int text=0x7f070058;
         public static final int textView1=0x7f070051;
         public static final int textView3=0x7f070053;
         public static final int textView4=0x7f070052;
@@ -1358,7 +1360,8 @@ containing a value of this type.
         public static final int fragment_main=0x7f03001c;
         public static final int fragment_menu=0x7f03001d;
         public static final int fragment_splash=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int oj_layout=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
     }
     public static final class menu {
         public static final int game=0x7f0e0000;

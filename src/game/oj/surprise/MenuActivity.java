@@ -3,6 +3,7 @@ package game.oj.surprise;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -20,6 +21,7 @@ public class MenuActivity extends ActionBarActivity
 	{
 		super.onCreate(savedInstanceState);
 		getSupportActionBar().hide();
+
 		setContentView(R.layout.activity_menu);
 
 		if (savedInstanceState == null)
@@ -27,8 +29,6 @@ public class MenuActivity extends ActionBarActivity
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
-
-		final Button play = (Button) findViewById(R.id.imageButton1);
 
 		Thread thread = new Thread()
 		{
@@ -39,15 +39,16 @@ public class MenuActivity extends ActionBarActivity
 				overridePendingTransition(R.animator.activityfadein,
 						R.animator.activityfadeout);
 
-				play.setOnClickListener(new View.OnClickListener()
-				{
-					public void onClick(View v)
-					{
-						finish();
-					}
-				});
+			}
+
+			public void selfDestruct(View v)
+			{
+
+				startActivity(new Intent(MenuActivity.this,
+						 GameActivity.class));
 
 			}
+
 		};
 
 		thread.start();
