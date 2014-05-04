@@ -1,13 +1,13 @@
 package game.oj.surprise;
 
 import java.util.Random;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.os.Message;
@@ -370,11 +370,16 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback
 		public void doDraw(Canvas canvas)
 		{
 
-			canvas.drawBitmap(bgrnd, 0, 0, null);
+			Rect dest = new Rect(0, 0, getWidth(), getHeight());
+			Paint paint = new Paint();
+
+			paint.setFilterBitmap(true);
+
+			canvas.drawBitmap(bgrnd, null, dest, paint);
 
 			canvas.save();
 
-			jar.setBounds(0, 0, jarHeight, jarWidth);
+			orange.draw(canvas);
 
 			canvas.restore();
 
